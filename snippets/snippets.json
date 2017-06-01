@@ -1,0 +1,1708 @@
+{
+    "Album": {
+        "prefix": "uxcore-album",
+        "body": [
+            "<Album",
+            "\twidth=\"$1\"",
+            "\theight=\"$2\"",
+            "\tenableKeyBoardControl",
+            "\tenableThumbs={false}",
+            "\tthumbPlacement=\"right\"",
+            "\tthumbBackground=\"#000\"",
+            ">",
+            "\t$3",
+            "</Album>"
+        ],
+        "description": "UXCore Album"
+    },
+    "Album Photo": {
+        "prefix": "uxcore-album-photo",
+        "body": [
+            "<Album.Photo",
+            "\tkey={0}",
+            "\tsrc={}",
+            "\tthumb-src={}",
+            "/>"
+        ],
+        "description": "UXCore Album Photo"
+    },
+    "Alert": {
+        "prefix": "uxcore-alert",
+        "body": [
+            "<Alert",
+            "\tmessage={$1}",
+            "\tprefixCls=\"kuma-alert\"",
+            "\ticonPrefixCls=\"kuma-icon\"",
+            "\tclassName=\"$2\"",
+            "\ttype=\"message\"",
+            "\thasContainer={false}",
+            "\tclosable={false}",
+            "\tcloseText=\"\"",
+            "\tdescription=\"\"",
+            "\tonClose=\"\"",
+            "/>"
+        ],
+        "description": "UXCore Alert"
+    },
+    "Animate": {
+        "prefix": "uxcore-animate",
+        "body": [
+            "<Animate",
+            "\tcomponent=\"span\"",
+            "\tshowProp={$1}",
+            "\ttransitionName={$2}",
+            "\ttransitionAppear={false}",
+            "\ttransitionEnter",
+            "\ttransitionLeave",
+            "\tonEnd={$3}",
+            ">",
+            "$4",
+            "</Animate>"
+        ],
+        "description": "UXCore Animate"
+    },
+    "Badge": {
+        "prefix": "uxcore-badge",
+        "body": [
+            "<Badge",
+            "\tprefixCls=\"kuma-badge\"",
+            "\tclassName=\"\"",
+            "\tcount={0}",
+            "\toverflowCount={99}",
+            "\tdot={false}",
+            "\ttext=\"\"",
+            ">",
+            "$1",
+            "</Badge>"
+        ],
+        "description": "UXCore Badge"
+    },
+    "Carousel": {
+        "prefix": "uxcore-carousel",
+        "body": [
+            "<Carousel",
+            "\tprefixCls=\"kuma-carousel\"",
+            "\tlargeArrowsAndDots={false}",
+            "\tdots",
+            "\tcssEase=\"ease-out\"",
+            "\tinfinite",
+            "\tspeed={500}",
+            "\tslidesToShow={1}",
+            "\tcenterDots",
+            "\tslidesToScroll={1}",
+            "\tarrows=\"hover\"",
+            ">",
+            "\t<div>$1</div>",
+            "</Carousel>"
+        ],
+        "description": "UXCore Carousel"
+    },
+    "Dialog": {
+        "prefix": "uxcore-dialog",
+        "body": [
+            "<Dialog",
+            "\ttitle={$1}",
+            "\tvisible={$2}",
+            "\tonOk={$3}",
+            "\tonCancel={$4}",
+            "\twidth={$5}",
+            "\tfooter={$6}",
+            "\tclosable",
+            "\tmaskClosable",
+            "\tlocale={'zh-cn'}",
+            "\tclassName=\"\"",
+            "\twrapClassName=\"\"",
+            "\tstyle={{}}",
+            "\tzIndex={}",
+            "\tbodyStyle={{}}",
+            "\tmousePosition={{}}",
+            ">",
+            "\t$1",
+            "</Dialog>"
+        ],
+        "description": "UXCore Dialog"
+    },
+    "Dropdown": {
+        "prefix": "uxcore-dropdown",
+        "body": [
+            "<Dropdown",
+            "\ttrigger={['hover']}",
+            "\toverlay={}",
+            "\tonVisibleChange={}",
+            "\tvisible={false}",
+            ">",
+            "\t$1",
+            "</Dropdown>"
+        ],
+        "description": "UXCore Dropdown"
+    },
+    "EmptyData": {
+        "prefix": "uxcore-empty-data",
+        "body": [
+            "<EmptyData",
+            "\ticon=\"\"",
+            "\tlargeIcon=\"\"",
+            "\tstyle={{}",
+            "\tprefixCls=\"kuma-empty-data\"",
+            "\tclassName=\"\"",
+            ">",
+            "$1",
+            "</EmptyData>"
+        ],
+        "description": "UXCore EmptyData"
+    },
+    "Icon": {
+        "prefix": "uxcore-icon",
+        "body": [
+            "<Icon",
+            "\tname=\"$1\"",
+            "\tclassName=\"$2\"",
+            "/>"
+        ],
+        "description": "UXCore Icon"
+    },
+    "LoadMore": {
+        "prefix": "uxcore-load-more",
+        "body": [
+            "<LoadMore",
+            "\tstatus=\"loaded\"",
+            "\tclassName=\"\"",
+            "\ttrigger={['view', 'click']}",
+            "\tonLoadMore={}",
+            "\tviewLoadDelay={150}",
+            "\tlocale={'zh-cn'}",
+            "\tloadText=\"\"",
+            "\tloadingText=\"\"",
+            "\tnoMoreText=\"\"",
+            "/>"
+        ],
+        "description": "UXCore LoadMore"
+    },
+    "Message Success": {
+        "prefix": "uxcore-message-success",
+        "body": [
+            "Message.success($1, $2);"
+        ],
+        "description": "UXCore Message.success"
+    },
+    "Message Info": {
+        "prefix": "uxcore-message-info",
+        "body": [
+            "Message.info($1, $2);"
+        ],
+        "description": "UXCore Message.info"
+    },
+    "Message Error": {
+        "prefix": "uxcore-message-error",
+        "body": [
+            "Message.error($1, $2);"
+        ],
+        "description": "UXCore Message.error"
+    },
+    "Message Loading": {
+        "prefix": "uxcore-message-loading",
+        "body": [
+            "Message.loading($1, $2);"
+        ],
+        "description": "UXCore Message.loading"
+    },
+    "Popover": {
+        "prefix": "uxcore-popover",
+        "body": [
+            "<Popover",
+            "\toverlay=\"\"",
+            "\toverlayClassName=\"\"",
+            "\tvisible={}",
+            "\ttitle=\"\"",
+            "\tplacement=\"top\"",
+            "\tprefixCls=\"kuma-popup\"",
+            "\ttrigger=\"hover\"",
+            "\tshowButton={false}",
+            "\tonOk={}",
+            "\tonCancel={}",
+            "\tokText=\"确定\"",
+            "\tcancelText=\"取消\"",
+            "\tonVisibleChange={}",
+            ">",
+            "$1",
+            "</Popover>"
+        ],
+        "description": "UXCore Popover"
+    },
+    "Progress Line": {
+        "prefix": "uxcore-progress-line",
+        "body": [
+            "<Line",
+            "\tpercent={0}",
+            "\tstatus=\"normal\"",
+            "\tstrokeWidth={1}",
+            "\tshowInfo",
+            "/>"
+        ],
+        "description": "UXCore Progress Line"
+    },
+    "Progress Circle": {
+        "prefix": "uxcore-progress-circle",
+        "body": [
+            "<Circle",
+            "\tpercent={0}",
+            "\tstatus=\"normal\"",
+            "\tstrokeWidth={1}",
+            "\tshowInfo",
+            "\tsize={156}",
+            "/>"
+        ],
+        "description": "UXCore Progress Circle"
+    },
+    "Steps": {
+        "prefix": "uxcore-steps",
+        "body": [
+            "<Steps",
+            "\tprefixCls=\"kuma-step\"",
+            "\tclassName=\"\"",
+            "\tcurrent={0}",
+            "\tdirection=\"\"",
+            "\tmaxDescriptionWidth={100}",
+            "\tshowIcon",
+            "\ttype=\"default\"",
+            "\tshowDetail={false}",
+            "\tcurrentDetail={0}",
+            "\tonChange={}",
+            ">",
+            "\t$1",
+            "</Steps>"
+        ],
+        "description": "UXCore Steps"
+    },
+    "Steps Step": {
+        "prefix": "uxcore-steps-step",
+        "body": [
+            "<Steps.Step",
+            "\tstatus=\"wait\"",
+            "\ttitle=\"\"",
+            "\tdescription=\"\"",
+            "\ticon=\"\"",
+            "/>"
+        ],
+        "description": "UXCore Steps Step"
+    },
+    "Tag": {
+        "prefix": "uxcore-tag",
+        "body": [
+            "<Tag",
+            "\tclassName=\"\"",
+            "\taddTags",
+            "\tonAdd={}",
+            "\tlocale=\"zh-cn\"",
+            ">",
+            "\t$1",
+            "</Tag>"
+        ],
+        "description": "UXCore Tag"
+    },
+    "Tag Item": {
+        "prefix": "uxcore-tag-item",
+        "body": [
+            "<Tag.Item",
+            "\tclassName=\"\"",
+            "\ttag=\"\"",
+            "\ttype=\"\"",
+            "\tcount={0}",
+            "\tcanAddCount={false}",
+            "\tcanDelete={false}",
+            "\tonClick={}",
+            "\tmaxDisplayCount={99}",
+            "\tonAddCount={}",
+            "\tonDelete={}",
+            "\tconfirmDeleteText=\"\"",
+            ">",
+            "\t$1",
+            "</Tag.Item>"
+        ],
+        "description": "UXCore Tag Item"
+    },
+    "Timeline": {
+        "prefix": "uxcore-timeline",
+        "body": [
+            "<Timeline",
+            "\tclassName=\"\"",
+            "\tpending={}",
+            ">",
+            "\t$1",
+            "</Timeline>"
+        ],
+        "description": "UXCore Timeline"
+    },
+    "Timeline Item": {
+        "prefix": "uxcore-timeline-item",
+        "body": [
+            "<Timeline.Item",
+            "\tclassName=\"\"",
+            "\tcolor=\"orange\"",
+            "\tdot={}",
+            ">",
+            "\t$1",
+            "</Timeline.Item>"
+        ],
+        "description": "UXCore Timeline Item"
+    },
+    "Tooltip": {
+        "prefix": "uxcore-tooltip",
+        "body": [
+            "<Tooltip",
+            "\toverlayClassName=\"uxcore\"",
+            "\ttrigger={['hover]}",
+            "\tmouseEnterDelay={0}",
+            "\tmouseLeaveDelay={0.1}",
+            "\toverlayStyle={{}}",
+            "\twrapStyle={{}}",
+            "\tprefixCls=\"kuma-tooltip\"",
+            "\tonVisibleChange={}",
+            "\tvisible={false}",
+            "\tdefaultVisible={false}",
+            "\tplacement={}",
+            "\talign={{}}",
+            "\toverlay={}",
+            "\tgetTooltipContainer={}",
+            ">",
+            "$1",
+            "</Tooltip>"
+        ],
+        "description": "UXCore Tooltip"
+    },
+    "Button": {
+        "prefix": "uxcore-button",
+        "body": [
+            "<Button",
+            "\tsize=\"medium\"",
+            "\ttype=\"\"",
+            "\tdisabled={false}",
+            "\tclassName=\"\"",
+            ">",
+            "$1",
+            "</Button>"
+        ],
+        "description": "UXCore Button"
+    },
+    "Calendar": {
+        "prefix": "uxcore-calendar",
+        "body": [
+            "<Calendar",
+            "\tvalue=\"\"",
+            "\tdefaultValue=\"\"",
+            "\tplaceholder=\"请选择日期\"",
+            "\tformat=\"yyyy-MM-dd\"",
+            "\tlocale=\"zh-cn\"",
+            "\tdisabledDate={}",
+            "\tonSelect={}",
+            "\tshowTime={false}",
+            "\tdisabled={false}",
+            "\ttimePicker={}",
+            "\tgetPopupContainer={}",
+            "/>"
+        ],
+        "description": "UXCore Calendar"
+    },
+    "Month Calendar": {
+        "prefix": "uxcore-calendar-month",
+        "body": [
+            "<Calendar.MonthCalendar",
+            "\tvalue=\"\"",
+            "\tdefaultValue=\"\"",
+            "\tplaceholder=\"请选择日期\"",
+            "\tformat=\"yyyy-MM-dd\"",
+            "\tlocale=\"zh-cn\"",
+            "\tonSelect={}",
+            "\tdisabled={false}",
+            "\tgetPopupContainer={}",
+            "/>"
+        ],
+        "description": "UXCore Month Calendar"
+    },
+    "Year Calendar": {
+        "prefix": "uxcore-calendar-year",
+        "body": [
+            "<Calendar.YearCalendar",
+            "\tvalue=\"\"",
+            "\tdefaultValue=\"\"",
+            "\tplaceholder=\"请选择日期\"",
+            "\tformat=\"yyyy-MM-dd\"",
+            "\tlocale=\"zh-cn\"",
+            "\tonSelect={}",
+            "\tdisabled={false}",
+            "\tgetPopupContainer={}",
+            "/>"
+        ],
+        "description": "UXCore Year Calendar"
+    },
+    "CasMultiSelect": {
+        "prefix": "uxcore-cascade-multi-select",
+        "body": [
+            "<CascadeMultiSelect",
+            "\tprefixCls=\"kuma-cascade-multi\"",
+            "\tclassName=\"\"",
+            "\tdropdownClassName=\"\"",
+            "\tconfig={[]}",
+            "\toptions={[]}",
+            "\tvalue={[]}",
+            "\tdefaultValue={[]}",
+            "\tcascadeSize={3}",
+            "\tplaceholder=\"\"",
+            "\tnotFoundContent=\"\"",
+            "\tallowClear",
+            "\tdisabled={false}",
+            "\tlocale=\"zh-cn\"",
+            "\tonSelect={}",
+            "\tonItemClick={}",
+            "\tonOk={}",
+            "\tonCancel={}",
+            "/>"
+        ],
+        "description": "UXCore CasMultiSelect"
+    },
+    "CascadeMultiPanel": {
+        "prefix": "uxcore-cascade-multi-panel",
+        "body": [
+            "<CascadeMultiPanel",
+            "\tclassName=\"\"",
+            "\tprefixCls=\"kuma-cascade-multi\"",
+            "\tconfig={[]}",
+            "\toptions={[]}",
+            "\tvalue={[]}",
+            "\tcascadeSize={3}",
+            "\tnotFoundContent=\"\"",
+            "\tallowClear",
+            "\tlocale=\"zh-cn\"",
+            "\tonSelect={}",
+            "\tonItemClick={}",
+            "/>"
+        ],
+        "description": "UXCore CascadeMultiPanel"
+    },
+    "CascadeMultiModal": {
+        "prefix": "uxcore-cascade-multi-modal",
+        "body": [
+            "<CascadeMultiModal",
+            "\tprefixCls=\"kuma-cascade-multi\"",
+            "\tclassName=\"\"",
+            "\tconfig={[]}",
+            "\toptions={[]}",
+            "\tvalue={[]}",
+            "\tcascadeSize={3}",
+            "\tnotFoundContent=\"\"",
+            "\tallowClear",
+            "\tlocale=\"zh-cn\"",
+            "\tonSelect={}",
+            "\tonItemClick={}",
+            "\ttitle=\"级联选择\"",
+            "\twidth={672}",
+            "\tonOk={}",
+            "\tonCancel={}",
+            "/>"
+        ],
+        "description": "UXCore CascadeMultiModal"
+    },
+    "CascadeSelect": {
+        "prefix": "uxcore-cascade-select",
+        "body": [
+            "<CascadeSelect",
+            "\tprefixCls=\"kuma-cascader\"",
+            "\tclassName=\"\"",
+            "\toptions={[]}",
+            "\tvalue={null}",
+            "\tdefaultValue={[]}",
+            "\tplaceholder=\"\"",
+            "\tonChange={}",
+            "\tdisabled={false}",
+            "\tclearable={false}",
+            "\tchangeOnSelect={false}",
+            "\texpandTrigger=\"click\"",
+            "\tbeforeRender={}",
+            "\tcascadeSize={3}",
+            "/>"
+        ],
+        "description": "UXCore CascadeSelect"
+    },
+    "Checkbox": {
+        "prefix": "uxcore-checkbox-group",
+        "body": [
+            "<CheckboxGroup",
+            "\tvalue={[]}",
+            "\tonChange={}",
+            "\tdisabled={false}",
+            ">",
+            "\t$1",
+            "</CheckboxGroup>"
+        ],
+        "description": "UXCore Checkbox"
+    },
+    "Checkbox Item": {
+        "prefix": "uxcore-checkbox-group-item",
+        "body": [
+            "<CheckboxGroup.Item",
+            "\ttext=\"\"",
+            "\tvalue=\"\"",
+            "\tdisabled={}",
+            ">",
+            "$1",
+            "</CheckboxGroup.Item>"
+        ],
+        "description": "UXCore Checkbox Item"
+    },
+    "Form": {
+        "prefix": "uxcore-form",
+        "body": [
+            "<Form",
+            "\tclassName=\"\"",
+            "\tjsxprefixCls=\"kuma-form\"",
+            "\tjsxmode=\"EDIT\"",
+            "\tjsxvalues={{}}",
+            "\tjsxonChange={}",
+            "\tinstantValidate",
+            "\tasyncValidate={false}",
+            ">",
+            "\t$1",
+            "</Form>"
+        ],
+        "description": "UXCore Form"
+    },
+    "Form Row": {
+        "prefix": "uxcore-form-row",
+        "body": [
+            "<Form.Row",
+            "\tclassName=\"\"",
+            "\tjsxprefixCls=\"kuma-form\"",
+            ">",
+            "\t$1",
+            "</Form.Row>"
+        ],
+        "description": "UXCore Form Row"
+    },
+    "InputFormField": {
+        "prefix": "uxcore-input-form-field",
+        "body": [
+            "<InputFormField",
+            "\tclassName=\"\"",
+            "\tjsxshow={true}",
+            "\tjsxmode=\"EDIT\"",
+            "\tjsxshowLabel",
+            "\tjsxname=\"\"",
+            "\tjsxlabel=\"\"",
+            "\tjsxprefixCls=\"kuma-form-field\"",
+            "\tjsxflex={1}",
+            "\tjsxtips=\"\"",
+            "\tjsxrules={}",
+            "\tinstantValidate",
+
+            "\tjsxplaceholder=\"\"",
+            "\tjsxdisabled={false}",
+            "\tvalidateOnBlur={false}",
+            "\tonKeyDown={}",
+            "\tonBlur={}",
+            "\tonFocus={}",
+            "\trenderView={}",
+            "\tautoTrim={}",
+            "\tinputType=\"text\"",
+            "/>"
+        ],
+        "description": "UXCore InputFormField"
+    },
+    "InputFormField Count": {
+        "prefix": "uxcore-input-form-field-count",
+        "body": [
+            "<InputFormField.Count",
+            "\ttotal={$1}",
+            "/>"
+        ],
+        "description": "UXCore InputFormField Count"
+    },
+    "InputFormField LeftAddon": {
+        "prefix": "uxcore-input-form-field-left-addon",
+        "body": [
+            "<InputFormField.LeftAddon>",
+            "\t$1",
+            "<InputFormField.LeftAddon/>"
+        ],
+        "description": "UXCore InputFormField LeftAddon"
+    },
+    "InputFormField RightAddon": {
+        "prefix": "uxcore-input-form-field-right-addon",
+        "body": [
+            "<InputFormField.RightAddon>",
+            "\t$1",
+            "<InputFormField.RightAddon/>"
+        ],
+        "description": "UXCore InputFormField RightAddon"
+    },
+    "TextAreaFormField": {
+        "prefix": "uxcore-text-area-form-field",
+        "body": [
+            "<TextAreaFormField",
+            "\tclassName=\"\"",
+            "\tjsxshow={true}",
+            "\tjsxmode=\"EDIT\"",
+            "\tjsxshowLabel",
+            "\tjsxname=\"\"",
+            "\tjsxlabel=\"\"",
+            "\tjsxprefixCls=\"kuma-form-field\"",
+            "\tjsxflex={1}",
+            "\tjsxtips=\"\"",
+            "\tjsxrules={}",
+            "\tinstantValidate",
+
+            "\tjsxplaceholder=\"\"",
+            "\tvalidateOnBlur={false}",
+            "\tonKeyDown={}",
+            "\tonBlur={}",
+            "\tonFocus={}",
+            "\tautoTrim={}",
+            "\tautosize",
+            "/>"
+        ],
+        "description": "UXCore TextAreaFormField"
+    },
+    "TextAreaFormField Count": {
+        "prefix": "uxcore-text-area-form-field-count",
+        "body": [
+            "<TextAreaFormField.Count",
+            "\ttotal={}",
+            "/>"
+        ],
+        "description": "UXCore TextAreaFormField Count"
+    },
+    "RadioGroupFormField": {
+        "prefix": "uxcore-radio-group-form-field",
+        "body": [
+            "<RadioGroupFormField",
+            "\tclassName=\"\"",
+            "\tjsxshow={true}",
+            "\tjsxmode=\"EDIT\"",
+            "\tjsxshowLabel",
+            "\tjsxname=\"\"",
+            "\tjsxlabel=\"\"",
+            "\tjsxprefixCls=\"kuma-form-field\"",
+            "\tjsxflex={1}",
+            "\tjsxtips=\"\"",
+            "\tjsxrules={}",
+            "\tinstantValidate",
+
+            "\tjsxdisabled={false}",
+            ">",
+            "\t$1",
+            "</RadioGroupFormField>"
+        ],
+        "description": "UXCore RadioGroupFormField"
+    },
+    "RadioGroupFormField Item": {
+        "prefix": "uxcore-radio-group-form-field-item",
+        "body": [
+            "<RadioGroupFormField.Item",
+            "\tvalue=\"\"",
+            "\ttext=\"\"",
+            "/>"
+        ],
+        "description": "UXCore RadioGroupFormField Item"
+    },
+    "SelectFormField": {
+        "prefix": "uxcore-select-form-field",
+        "body": [
+            "<SelectFormField",
+            "\tclassName=\"\"",
+            "\tjsxshow={true}",
+            "\tjsxmode=\"EDIT\"",
+            "\tjsxshowLabel",
+            "\tjsxname=\"\"",
+            "\tjsxlabel=\"\"",
+            "\tjsxprefixCls=\"kuma-form-field\"",
+            "\tjsxflex={1}",
+            "\tjsxtips=\"\"",
+            "\tjsxrules={}",
+            "\tinstantValidate",
+
+            "\tjsxdata={{}}",
+            "\tjsxfetchUrl=\"\"",
+            "\tjsxstyle={{}}",
+            "\tbeforeFetch={}",
+            "\tafterFetch={}",
+            "\tdataType=\"json\"",
+            "/>"
+        ],
+        "description": "UXCore SelectFormField"
+    },
+    "SearchFormField": {
+        "prefix": "uxcore-search-form-field",
+        "body": [
+            "<SearchFormField",
+            "\tclassName=\"\"",
+            "\tjsxshow={true}",
+            "\tjsxmode=\"EDIT\"",
+            "\tjsxshowLabel",
+            "\tjsxname=\"\"",
+            "\tjsxlabel=\"\"",
+            "\tjsxprefixCls=\"kuma-form-field\"",
+            "\tjsxflex={1}",
+            "\tjsxtips=\"\"",
+            "\tjsxrules={}",
+            "\tinstantValidate",
+
+            "\tadvancedOptions={[]}",
+            "\tadvancedConfig={{}}",
+            "\tclassOptions={[]}",
+            "\tclassConfig={{}}",
+            "\ttidy={false}",
+            "\tonIconClick={}",
+            "/>"
+        ],
+        "description": "UXCore SearchFormField"
+    },
+    "CheckboxGroupFormField": {
+        "prefix": "uxcore-checkbox-group-form-field",
+        "body": [
+            "<CheckboxGroupFormField",
+            "\tclassName=\"\"",
+            "\tjsxshow={true}",
+            "\tjsxmode=\"EDIT\"",
+            "\tjsxshowLabel",
+            "\tjsxname=\"\"",
+            "\tjsxlabel=\"\"",
+            "\tjsxprefixCls=\"kuma-form-field\"",
+            "\tjsxflex={1}",
+            "\tjsxtips=\"\"",
+            "\tjsxrules={}",
+            "\tinstantValidate",
+
+            "\tjsxdisabled={false}",
+            ">",
+            "\t$1",
+            "</CheckboxGroupFormField>"
+        ],
+        "description": "UXCore CheckboxGroupFormField"
+    },
+    "CheckboxGroupFormField Item": {
+        "prefix": "uxcore-checkbox-group-form-field-item",
+        "body": [
+            "<CheckboxGroupFormField.Item",
+            "\tvalue=\"\"",
+            "\ttext=\"\"",
+            "/>"
+        ],
+        "description": "UXCore CheckboxGroupFormField Item"
+    },
+    "DateFormField": {
+        "prefix": "uxcore-date-form-field",
+        "body": [
+            "<DateFormField",
+            "\tclassName=\"\"",
+            "\tjsxshow={true}",
+            "\tjsxmode=\"EDIT\"",
+            "\tjsxshowLabel",
+            "\tjsxname=\"\"",
+            "\tjsxlabel=\"\"",
+            "\tjsxprefixCls=\"kuma-form-field\"",
+            "\tjsxflex={1}",
+            "\tjsxtips=\"\"",
+            "\tjsxrules={}",
+            "\tinstantValidate",
+
+            "\tjsxtype=\"single\"",
+            "\tjsxfrom=\"\"",
+            "\tjsxto=\"\"",
+            "\tpanel=\"day\"",
+            "\tautoMatchWidth={false}",
+            "/>"
+        ],
+        "description": "UXCore DateFormField"
+    },
+    "NumberInputFormField": {
+        "prefix": "uxcore-number-input-form-field",
+        "body": [
+            "<NumberInputFormField",
+            "\tclassName=\"\"",
+            "\tjsxshow={true}",
+            "\tjsxmode=\"EDIT\"",
+            "\tjsxshowLabel",
+            "\tjsxname=\"\"",
+            "\tjsxlabel=\"\"",
+            "\tjsxprefixCls=\"kuma-form-field\"",
+            "\tjsxflex={1}",
+            "\tjsxtips=\"\"",
+            "\tjsxrules={}",
+            "\tinstantValidate",
+
+            "\tjsxplaceholder=\"\"",
+            "\tjsxtype=\"\"",
+            "/>"
+        ],
+        "description": "UXCore NumberInputFormField"
+    },
+    "CascadeSelectFormField": {
+        "prefix": "uxcore-cascade-select-form-field",
+        "body": [
+            "<CascadeSelectFormField",
+            "\tclassName=\"\"",
+            "\tjsxshow={true}",
+            "\tjsxmode=\"EDIT\"",
+            "\tjsxshowLabel",
+            "\tjsxname=\"\"",
+            "\tjsxlabel=\"\"",
+            "\tjsxprefixCls=\"kuma-form-field\"",
+            "\tjsxflex={1}",
+            "\tjsxtips=\"\"",
+            "\tjsxrules={}",
+            "\tinstantValidate",
+
+            "\tjsxdata={{}}",
+            "\tjsxplaceholder=\"\"",
+            "\tjsxstyle={{}}",
+            "/>"
+        ],
+        "description": "UXCore CascadeSelectFormField"
+    },
+    "PickableFormField": {
+        "prefix": "uxcore-pickable-form-field",
+        "body": [
+            "<PickableFormField",
+            "\tclassName=\"\"",
+            "\tjsxshow={true}",
+            "\tjsxmode=\"EDIT\"",
+            "\tjsxshowLabel",
+            "\tjsxname=\"\"",
+            "\tjsxlabel=\"\"",
+            "\tjsxprefixCls=\"kuma-form-field\"",
+            "\tjsxflex={1}",
+            "\tjsxtips=\"\"",
+            "\tjsxrules={}",
+            "\tinstantValidate",
+
+            "\tmultiple",
+            "\tvalue={}",
+            "\ttype=\"normal\"",
+            "\tmax={99}",
+            "/>"
+        ],
+        "description": "UXCore PickableFormField"
+    },
+    "EditorFormField": {
+        "prefix": "uxcore-editor-form-field",
+        "body": [
+            "<EditorFormField",
+            "\tclassName=\"\"",
+            "\tjsxshow={true}",
+            "\tjsxmode=\"EDIT\"",
+            "\tjsxshowLabel",
+            "\tjsxname=\"\"",
+            "\tjsxlabel=\"\"",
+            "\tjsxprefixCls=\"kuma-form-field\"",
+            "\tjsxflex={1}",
+            "\tjsxtips=\"\"",
+            "\tjsxrules={}",
+            "\tinstantValidate",
+
+            "\tplaceholder=\"\"",
+            "\tjsxconfig={{}}",
+            "/>"
+        ],
+        "description": "UXCore EditorFormField"
+    },
+    "OtherFormField": {
+        "prefix": "uxcore-other-form-field",
+        "body": [
+            "<OtherFormField",
+            "\tclassName=\"\"",
+            "\tjsxshow={true}",
+            "\tjsxmode=\"EDIT\"",
+            "\tjsxshowLabel",
+            "\tjsxname=\"\"",
+            "\tjsxlabel=\"\"",
+            "\tjsxprefixCls=\"kuma-form-field\"",
+            "\tjsxflex={1}",
+            "\tjsxtips=\"\"",
+            "\tjsxrules={}",
+            "\tinstantValidate",
+            ">",
+            "\t$1",
+            "</OtherFormField>"
+        ],
+        "description": "UXCore OtherFormField"
+    },
+    "MulitSelect": {
+        "prefix": "uxcore-multi-select",
+        "body": [
+            "<MulitSelect",
+            "\tvalue={[]}",
+            "\tonChange={}",
+            "\tdisabled={false}",
+            "\tclassName=\"\"",
+            "\tdropdownClassName=\"\"",
+            "\tplaceholder=\"\"",
+            "\ttitleBreakStr=\"、\"",
+            "\toptionLabelProp=\"text\"",
+            "\tmaxSelect={}",
+            "\tshowSelectAll",
+            "\tshowClear",
+            "\tonSubmit={}",
+            ">",
+            "\t$1",
+            "</MulitSelect>"
+        ],
+        "description": "UXCore MulitSelect"
+    },
+    "MulitSelect Item": {
+        "prefix": "uxcore-multi-select-item",
+        "body": [
+            "<MulitSelect.Item",
+            "\tvalue=\"\"",
+            "\ttext=\"\"",
+            "/>"
+        ],
+        "description": "UXCore MulitSelect Item"
+    },
+    "Pickable": {
+        "prefix": "uxcore-pickable",
+        "body": [
+            "<Pickable",
+            "\tprefixCls=\"kuma-pickable\"",
+            "\tclassName=\"\"",
+            "\tonChange={}",
+            "\tmultiple",
+            "\tmax={99}",
+            "\ttype=\"normal\"",
+            "\tenableFold={false}",
+            "\tdefaultFoldItems",
+            "\tmaxLines={1}",
+            "\tlocale=\"zh-cn\"",
+            ">",
+            "\t$1",
+            "</Pickable>"
+        ],
+        "description": "UXCore Pickable"
+    },
+    "Pickable Item": {
+        "prefix": "uxcore-pickable-item",
+        "body": [
+            "<Pickable.Item",
+            "\tvalue={$1}",
+            "\tdisabled={false}",
+            "\tnumber={}",
+            "\tmax={99}",
+            ">",
+            "\t$2",
+            "</Pickable.Item>"
+        ],
+        "description": "UXCore Pickable Item"
+    },
+    "RadioGroup": {
+        "prefix": "uxcore-radiogroup",
+        "body": [
+            "<RadioGroup",
+            "\tvalue={$1}",
+            "\tonChange={$2}",
+            "\tdisabled={false}",
+            ">",
+            "\t$3",
+            "</RadioGroup>"
+        ],
+        "description": "UXCore RadioGroup"
+    },
+    "RadioGroup Item": {
+        "prefix": "uxcore-radiogroup-item",
+        "body": [
+            "<RadioGroup.Item",
+            "\tvalue={$1}",
+            "\ttext={$2}",
+            "\tdisabled={false}",
+            ">",
+            "\t$3",
+            "</RadioGroup.Item>"
+        ],
+        "description": "UXCore RadioGroup Item"
+    },
+    "Rate": {
+        "prefix": "uxcore-rate",
+        "body": [
+            "<Rate",
+            "\tvalue={$1}",
+            "\tonChange={$2}",
+            "\tprefixCls=\"kuma-rate\"",
+            "\tclassName=\"\"",
+            "\tdisabled={false}",
+            "\ttotal={5}",
+            "\tscoreTips={[]}",
+            "\ttipShow=\"hover\"",
+            "\tsizee=\"medium\"",
+            "\ticons={[]}",
+            "\tactiveIcons={[]}",
+            "\tactiveAll",
+            "/>"
+        ],
+        "description": "UXCore Rate"
+    },
+    "Select2": {
+        "prefix": "uxcore-select2",
+        "body": [
+            "<Select",
+            "\tvalue={}",
+            "\tdefaultValue={}",
+            "\tmultiple={false}",
+            "\tfilterOption",
+            "\ttags={false}",
+            "\tonSelect={}",
+            "\tonDeselect={}",
+            "\tonChange={}",
+            "\tonSearch={}",
+            "\tallowClear={false}",
+            "\tplaceholder=\"\"",
+            "\tsearchPlaceholder=\"\"",
+            "\toptionFilterProp=\"\"",
+            "\tcombobox={false}",
+            "\tsize=\"\"",
+            "\toptionLabelProp=\"children\"",
+            "\tgetPopupContainer={}",
+            "\tdropdownMatchSelectWidth",
+            "\tdropdownClassName=\"\"",
+            "\tnotFoundContent=\"not found\"",
+            ">",
+            "\t$1",
+            "</Select>"
+        ],
+        "description": "UXCore Select2"
+    },
+    "Select2 Option": {
+        "prefix": "uxcore-select2-option",
+        "body": [
+            "<Select.Option",
+            "\tdisabled={false}",
+            "\tkey={$1}",
+            "\tvalue={$2}",
+            "\ttitle=\"$3\"",
+            "/>"
+        ],
+        "description": "UXCore Select2 Option"
+    },
+    "Select2 OptGroup": {
+        "prefix": "uxcore-select2-optgroup",
+        "body": [
+            "<Select.OptGroup",
+            "\tlabel=\"$1\"",
+            "\tkey=\"$2\"",
+            ">",
+            "\t$3",
+            "</Select.OptGroup>"
+        ],
+        "description": "UXCore Select2 OptGroup"
+    },
+    "Switch": {
+        "prefix": "uxcore-switch",
+        "body": [
+            "<Switch",
+            "\tprefixCls=\"kuma-switch\"",
+            "\tclassName=\"\"",
+            "\tchecked={false}",
+            "\tdefaultChecked={false}",
+            "\tonChange={}",
+            "\tcheckedChildren=\"\"",
+            "\tunCheckedChildren=\"\"",
+            "/>"
+        ],
+        "description": "UXCore Switch"
+    },
+    "Tinymce": {
+        "prefix": "uxcore-tinymce",
+        "body": [
+            "<Tinymce",
+            "\tconfig={{}}",
+            "\tcontent={}",
+            "\tplaceholder=\"\"",
+            "\tonChange={}",
+            "/>"
+        ],
+        "description": "UXCore Tinymce"
+    },
+    "TreeSelect": {
+        "prefix": "uxcore-tree-select",
+        "body": [
+            "<TreeSelect",
+            "\tclassName=\"\"",
+            "\tprefixCls=\"kuma-tree-select\"",
+            "\tanimation=\"\"",
+            "\ttransitionName=\"\"",
+            "\tchoiceTransitionName=\"\"",
+            "\tdropdownMatchSelectWidth",
+            "\tdropdownClassName=\"\"",
+            "\tdropdownStyle={{}}",
+            "\tdropdownPopupAlign={}",
+            "\tnotFoundContent=\"Not Found\"",
+            "\tshowSearch",
+            "\tallowClear={false}",
+            "\tmaxTagTextLength={}",
+            "\tmultiple={false}",
+            "\tdisabled={false}",
+            "\tinputValue={}",
+            "\tdefaultValue={}",
+            "\tvalue={}",
+            "\tlabelInValue={false}",
+            "\tonChange={}",
+            "\tonSelect={}",
+            "\tonSearch={}",
+            "\tshowCheckedStrategy={}",
+            "\ttreeIcon={false}",
+            "\ttreeLine={false}",
+            "\ttreeDefaultExpandAll={false}",
+            "\ttreeCheckable={false}",
+            "\ttreeCheckStrictly={false}",
+            "\tfilterTreeNode={}",
+            "\ttreeNodeFilterProp=\"value\"",
+            "\ttreeNodeLabelProp=\"title\"",
+            "\ttreeData={[]}",
+            "\ttreeDataSimpleMode={false}",
+            "\tloadData={}",
+            "/>"
+        ],
+        "description": "UXCore TreeSelect"
+    },
+    "TreeSelect TreeNode": {
+        "prefix": "uxcore-tree-select-node",
+        "body": [
+            "<TreeSelect.TreeNode",
+            "\tdisabled={false}",
+            "\tkey={$1}",
+            "\tvalue=\"$2\"",
+            "\ttitle=\"---\"",
+            "\tisLeaf={false}",
+            "/>"
+        ],
+        "description": "UXCore TreeSelect Node"
+    },
+    "Uploader": {
+        "prefix": "uxcore-uploader",
+        "body": [
+            "<Uploader",
+            "\tclassName=\"\"",
+            "\tlocale=\"zh-cn\"",
+            "\tfileList={[]}",
+            "\tisOnlyImg={false}",
+            "\tcore={}",
+            "\tname=\"file\"",
+            "\turl=\"\"",
+            "\tparams={[]}",
+            "\theaders={[]}",
+            "\twithCredentials={false}",
+            "\ttimeout={0}",
+            "\tchunkEnable={false}",
+            "\tchunkSize={0}",
+            "\tchunkRetries={0}",
+            "\tchunkProcessThreads={2}",
+            "\tprocessThreads={2}",
+            "\tqueueCapcity={0}",
+            "\tautoPending",
+            "\tmultiple",
+            "\taccept={}",
+            "\tsizeLimit={0}",
+            "\tpreventDuplicate={false}",
+            "\tactionOnQueueLimit=\"error\"",
+            "/>"
+        ],
+        "description": "UXCore Uploader"
+    },
+    "Collapse": {
+        "prefix": "uxcore-collapse",
+        "body": [
+            "<Collapse",
+            "\tactiveKey={[]}",
+            "\tdefaultActiveKey={[]}",
+            "\taccordion={false}",
+            "\tonChange={}",
+            ">",
+            "\t$1",
+            "</Collapse>"
+        ],
+        "description": "UXCore Collapse"
+    },
+    "Collapse Panel": {
+        "prefix": "uxcore-collapse-panel",
+        "body": [
+            "<Collapse.Panel",
+            "\tkey={}",
+            "\theader={}",
+            ">",
+            "\t$1",
+            "</Collapse.Panel>"
+        ],
+        "description": "UXCore Collapse Panel"
+    },
+    "Crumb": {
+        "prefix": "uxcore-crumb",
+        "body": [
+            "<Crumb",
+            "\tclassName=\"\"",
+            ">",
+            "\t$1",
+            "</Crumb>"
+        ],
+        "description": "UXCore Crumb"
+    },
+    "Crumb Item": {
+        "prefix": "uxcore-crumb-item",
+        "body": [
+            "<Crumb.Item",
+            "\tclassName=\"\"",
+            "\thref=\"\"",
+            "/>"
+        ],
+        "description": "UXCore Crumb Item"
+    },
+    "FloatNav": {
+        "prefix": "uxcore-float-nav",
+        "body": [
+            "<FloatNav",
+            "\tprefixCls=\"uxcore-float-nav\"",
+            "\tclassName=\"\"",
+            "\tshowOrderNumber",
+            "\twidth={260}",
+            "\theight={370}",
+            "\toffset={{right:20, bottom:20}",
+            "\tcontent={}",
+            "\tstepLength={50}",
+            ">",
+            "\t$1",
+            "</FloatNav>"
+        ],
+        "description": "UXCore FloatNav"
+    },
+    "FloatNav Item": {
+        "prefix": "uxcore-float-nav-item",
+        "body": [
+            "<FloatNav.NavItem",
+            "\ttitle=\"\"",
+            "\tanchor=\"\"",
+            "\tonClick={}",
+            ">",
+            "\t$1",
+            "</FloatNav.NavItem>"
+        ],
+        "description": "UXCore FloatNav Item"
+    },
+    "Menu": {
+        "prefix": "uxcore-menu",
+        "body": [
+            "<Menu",
+            "\tmode=\"vertical\"",
+            "\tselectedKeys={[]}",
+            "\tdefaultSelectedKeys={[]}",
+            "\topenKeys={[]}",
+            "\tdefaultOpenKeys={[]}",
+            "\tonSelect={}",
+            "\tonDeselect={}",
+            "\tonClick={}",
+            "\tstyle={{}}",
+            ">",
+            "\t$1",
+            "</Menu>"
+        ],
+        "description": "UXCore Menu"
+    },
+    "Menu SubMenu": {
+        "prefix": "uxcore-menu-sub-menu",
+        "body": [
+            "<Menu.SubMenu",
+            "\ttitle=\"$1\"",
+            ">",
+            "\t$2",
+            "</Menu.SubMenu>"
+        ],
+        "description": "UXCore Menu SubMenu"
+    },
+    "Menu Item": {
+        "prefix": "uxcore-menu-item",
+        "body": [
+            "<Menu.Item",
+            "\tdisabled={false}",
+            "\tkey={$1}",
+            ">",
+            "\t$2",
+            "</Menu.Item>"
+        ],
+        "description": "UXCore Menu Item"
+    },
+    "Pagination": {
+        "prefix": "uxcore-pagination",
+        "body": [
+            "<Pagination",
+            "\tlocale=\"zh-cn\"",
+            "\tcurrent={1}",
+            "\ttotal={0}",
+            "\tpageSize={10}",
+            "\tonChange={}",
+            "\tshowTotal={false}",
+            "\tshowQuickJump={false}",
+            "\tshowSizeChanger={false}",
+            "\tsizeOptions={[10,20,30,40]}",
+            "\tonShowSizeChange={}",
+            "\tclassName=\"\"",
+            "\tsimple={{}}",
+            "\tgetSelectPopupContainer={}",
+            "/>"
+        ],
+        "description": "UXCore Pagination"
+    },
+    "Tabs": {
+        "prefix": "uxcore-tabs",
+        "body": [
+            "<Tabs",
+            "\tactiveKey=\"\"",
+            "\tdefaultActiveKey=\"\"",
+            "\tonChange={}",
+            "\tonTabClick={}",
+            "\tdestroyInactiveTabPane={false}",
+            "\ttype=\"large\"",
+            ">",
+            "\t$1",
+            "</Tabs>"
+        ],
+        "description": "UXCore Tabs"
+    },
+    "Tabs TabPane": {
+        "prefix": "uxcore-tabs-pane",
+        "body": [
+            "<Tabs.TabPane",
+            "\tkey={}",
+            "\ttab=\"\"",
+            ">",
+            "\t$1",
+            "</Tabs.TabPane>"
+        ],
+        "description": "UXCore Tabs TabPane"
+    },
+    "Totop": {
+        "prefix": "uxcore-totop",
+        "body": [
+            "<Totop",
+            "\tprefixCls=\"kuma-totop\"",
+            "\tclassName=\"\"",
+            "\tto={10}",
+            "\tdistance={30}",
+            "\tduration={600}",
+            "\ttheme=\"\"",
+            "/>"
+        ],
+        "description": "UXCore Totop"
+    },
+    "Tree": {
+        "prefix": "uxcore-tree",
+        "body": [
+            "<Tree",
+            "\tclassName=\"\"",
+            "\tprefixCls=\"\"",
+            "\tshowLine",
+            "\tshowIcon",
+            "\tselectable",
+            "\tmultiple={false}",
+            "\tcheckable={false}",
+            "\tdefaultExpandAll={false}",
+            "\tdefaultExpandedKeys={[]}",
+            "\texpandedKeys={[]}",
+            "\tautoExpandParent",
+            "\tcheckedKeys={[]}",
+            "\tdefaultCheckedKeys={[]}",
+            "\tselectedKeys={[]}",
+            "\tdefaultSelectedKeys={[]}",
+            "\tonExpand={}",
+            "\tonCheck={}",
+            "\tonSelect={}",
+            "\tfilterTreeNode={}",
+            "\tloadData={}",
+            "\tonRightClick={}",
+            "\tonMouseEnter={}",
+            "\tonMouseLeave={}",
+            "\tdraggable={false}",
+            "\tonDragStart={}",
+            "\tonDragEnter={}",
+            "\tonDragOver={}",
+            "\tonDragLeave={}",
+            "\tonDrop={}",
+            ">",
+            "\t$1",
+            "</Tree>"
+        ],
+        "description": "UXCore Tree"
+    },
+    "Tree Node": {
+        "prefix": "uxcore-tree-node",
+        "body": [
+            "<Tree.TreeNode",
+            "\tclassName=\"\"",
+            "\tdisabled={false}",
+            "\tdisableCheckbox={false}",
+            "\ttitle=\"---\"",
+            "\tkey={$1}",
+            "\tisLeaf={false}",
+            "/>"
+        ],
+        "description": "UXCore Tree Node"
+    },
+    "Grid": {
+        "prefix": "uxcore-grid",
+        "body": [
+            "<Grid",
+            "\tcomponentClass=\"div\"",
+            "\tfluid={false}",
+            ">",
+            "\t$1",
+            "</Grid>"
+        ],
+        "description": "UXCore Grid"
+    },
+    "Grid Row": {
+        "prefix": "uxcore-grid-row",
+        "body": [
+            "<Grid.Row",
+            "\tcomponentClass=\"div\"",
+            ">",
+            "\t$1",
+            "</Grid.Row>"
+        ],
+        "description": "UXCore Grid Row"
+    },
+    "Grid Col": {
+        "prefix": "uxcore-grid-col",
+        "body": [
+            "<Grid.Col",
+            "\tlg={}",
+            "\tlgOffset={}",
+            "\tlgPull={}",
+            "\tlgPush={}",
+            "\tmd={}",
+            "\tmdOffset={}",
+            "\tmdPull={}",
+            "\tmdPush={}",
+            "\tsm={}",
+            "\tsmOffset={}",
+            "\tsmPull={}",
+            "\tsmPush={}",
+            "\txs={}",
+            "\txsOffset={}",
+            "\txsPull={}",
+            "\txsPush={}",
+            ">",
+            "\t$1",
+            "</Grid.Col>"
+        ],
+        "description": "UXCore Grid Col"
+    },
+    "Layout": {
+        "prefix": "uxcore-layout",
+        "body": [
+            "<Layout",
+            "\tclassName=\"\"",
+            ">",
+            "\t$1",
+            "</Layout>"
+        ],
+        "description": "UXCore Layout"
+    },
+    "Layout Left": {
+        "prefix": "uxcore-layout-left",
+        "body": [
+            "<Layout.Left",
+            "\tclassName=\"\"",
+            "\twidth={500}",
+            "\tadaptive={false}",
+            ">",
+            "\t$1",
+            "</Layout.Left>"
+        ],
+        "description": "UXCore Layout Left"
+    },
+    "Layout Right": {
+        "prefix": "uxcore-layout-right",
+        "body": [
+            "<Layout.Right",
+            "\tclassName=\"\"",
+            "\twidth={500}",
+            "\tadaptive={false}",
+            ">",
+            "\t$1",
+            "</Layout.Right>"
+        ],
+        "description": "UXCore Layout Right"
+    },
+    "Matrix": {
+        "prefix": "uxcore-matrix",
+        "body": [
+            "<Matrix",
+            "\tprefixCls=\"kuma-matrix\"",
+            "\tclassName=\"\"",
+            "\twidth={}",
+            "\theight={}",
+            "\tcellHeight={40}",
+            "\tcellWidth={100}",
+            "\trender={}",
+            "\tdata={{}}",
+            "/>"
+        ],
+        "description": "UXCore Matrix"
+    },
+    "Table": {
+        "prefix": "uxcore-table",
+        "body": [
+            "<Table",
+            "\tjsxcolumns={[]}",
+            "\twidth={1000}",
+            "\theight={'100%'}",
+            "\tshowColumnPicker",
+            "\tshowPager",
+            "\tshowPagerTotal={false}",
+            "\tshowPagerSizeChanger",
+            "\tisMiniPager",
+            "\tshowHeader",
+            "\tshowHeaderBorder={false}",
+            "\tshowMask",
+            "\tshowSearch={false}",
+            "\tdoubleClickToEdit",
+            "\tfetchDataOnMount",
+            "\trowSelector=\"checkboxSelector\"",
+            "\tlocale=\"zh-cn\"",
+            "\temptyText=\"暂无数据\"",
+            "\tsearchBarPlaceholder=\"搜索表格内容\"",
+            "\tloadingText=\"loading\"",
+            "\theaderHeight={40}",
+            "\tpageSize={10}",
+            "\tpagerSizeOptions={[10,20,30,40]}",
+            "\tqueryKeys={[]}",
+            "\tjsxdata={{}}",
+            "\tfetchUrl=\"\"",
+            "\tfetchParams={{}}",
+            "\tactionBar={}",
+            "\tbeforeFetch={}",
+            "\tprocessData={}",
+            "\tonFetchError={}",
+            "\tonSearch={}",
+            "\tonOrder={}",
+            "\tonPagerChange={}",
+            "\taddRowClassName={}",
+            "\trowSelection={{}}",
+
+            "\trenderSubComp={}",
+
+            "\trenderModel=\"\"",
+            "\tlevels={0}",
+
+            "\tonChange={}",
+            "\tgetSavedData",
+            "/>"
+        ],
+        "description": "UXCore Table"
+    },
+    "Mention": {
+        "prefix": "uxcore-mention",
+        "body": [
+            "<Mention",
+            "\tprefixCls=\"kuma-mention\"",
+            "\tsource={}",
+            "\tdelay={100}",
+            "\tmatchRange={[2,8]}",
+            "\tformatter={}",
+            "\tpanelFormatter={}",
+            "\tonChange={}",
+            ">",
+            "\t$1",
+            "</Mention>"
+        ],
+        "description": "UXCore Mention"
+    },
+    "Mention TinymceMention": {
+        "prefix": "uxcore-mention-tinymce",
+        "body": [
+            "<Mention.TinymceMention",
+            "\tprefixCls=\"kuma-mention\"",
+            "\tsource={}",
+            "\tdelay={100}",
+            "\tmatchRange={[2,8]}",
+            "\tformatter={}",
+            "\tpanelFormatter={}",
+            "\tmentionFormatter={}",
+            "\tonChange={}",
+            "\tonAdd={}",
+            "\tinsertMode=\"\"",
+            ">",
+            "\t$1",
+            "</Mention.TinymceMention>"
+        ],
+        "description": "UXCore Mention TinymceMention"
+    },
+    "Mention ContentEditableEditor": {
+        "prefix": "uxcore-mention-content-editable",
+        "body": [
+            "<Mention.ContentEditableEditor",
+            "\tprefixCls=\"kuma-mention\"",
+            "\twidth={200}",
+            "\theight={100}",
+            "\tplaceholder=\"\"",
+            "\tmentionFormatter={}",
+            "\tonChange={}",
+            "\tonAdd={}",
+            "\tdefaultValue=\"\"",
+            "\treadOnly={false}",
+            "\tdelimiter=\"@\"",
+            ">",
+            "\t$1",
+            "</Mention.ContentEditableEditor>"
+        ],
+        "description": "UXCore Mention ContentEditableEditor"
+    },
+    "Mention TextareaEditor": {
+        "prefix": "uxcore-mention-textarea-editor",
+        "body": [
+            "<Mention.TextareaEditor",
+            "\tprefixCls=\"kuma-mention\"",
+            "\twidth={200}",
+            "\theight={100}",
+            "\tplaceholder=\"\"",
+            "\tmentionFormatter={}",
+            "\tonChange={}",
+            "\tonAdd={}",
+            "\tdefaultValue=\"\"",
+            "\treadOnly={false}",
+            "\tdelimiter=\"@\"",
+            ">",
+            "\t$1",
+            "</Mention.TextareaEditor>"
+        ],
+        "description": "UXCore Mention TextareaEditor"
+    },
+    "Mention InputEditor": {
+        "prefix": "uxcore-mention-input-editor",
+        "body": [
+            "<Mention.InputEditor",
+            "\tprefixCls=\"kuma-mention\"",
+            "\twidth={200}",
+            "\theight={30}",
+            "\tplaceholder=\"\"",
+            "\tmentionFormatter={}",
+            "\tonChange={}",
+            "\tonAdd={}",
+            "\tdefaultValue=\"\"",
+            "\treadOnly={false}",
+            "\tdelimiter=\"@\"",
+            ">",
+            "\t$1",
+            "</Mention.InputEditor>"
+        ],
+        "description": "UXCore Mention InputEditor"
+    },
+    "Transfer": {
+        "prefix": "uxcore-transfer",
+        "body": [
+            "<Transfer",
+            "\tdata={[]}",
+            "\tdisabled={false}",
+            "\tshowSearch",
+            "\tsearchPlaceholder=\"\"",
+            "\tleftTitle=\"未选中的\"",
+            "\trightTitle=\"已选中的\"",
+            "\tonChange={}",
+            "/>"
+        ],
+        "description": "UXCore Transfer"
+    }
+}

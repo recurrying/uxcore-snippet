@@ -1,0 +1,75 @@
+{
+    "name": "uxcore-snippet",
+    "displayName": "UXCore snippets for es6/es7",
+    "description": "Code snippets for UXCore es6/es7",
+    "version": "0.0.6",
+    "galleryBanner": {
+        "theme": "light",
+        "color": "#FFFFFF"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/recore/uxcore-snippet"
+    },
+    "icon": "images/uxcore.png",
+    "publisher": "uxcore",
+    "keywords": [
+        "vscode",
+        "snippets",
+        "react",
+        "uxcore",
+        "es6",
+        "es7",
+        "javascript"
+    ],
+    "badges": [
+        {
+            "url": "http://vsmarketplacebadge.apphb.com/version-short/uxcore.uxcore-snippet.svg",
+            "href": "https://marketplace.visualstudio.com/items?itemName=uxcore.uxcore-snippet",
+            "description": "Version"
+        },
+        {
+            "url": "http://vsmarketplacebadge.apphb.com/installs-short/uxcore.uxcore-snippet.svg",
+            "href": "https://marketplace.visualstudio.com/items?itemName=uxcore.uxcore-snippet",
+            "description": "Install Count"
+        },
+        {
+            "url": "http://vsmarketplacebadge.apphb.com/rating-short/uxcore.uxcore-snippet.svg",
+            "href": "https://marketplace.visualstudio.com/items?itemName=uxcore.uxcore-snippet",
+            "description": "Rating"
+        }
+    ],
+    "engines": {
+        "vscode": "^1.12.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascriptreact",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "jsx",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    },
+    "scripts": {
+        "build-list": "node build/list.js"
+    }
+}
